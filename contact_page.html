@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link href="contact.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Pattaya" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+        <meta name = "viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <title>Hanna's portfolio</title>
+    </head>
+    <body>
+     <section class="mainSection">
+         <nav class="navbar navbar-default header-nav">
+             <div class="container-fluid header-container">
+                 <div class="navbar-header">
+                     <div class="navbar-brand header-name" >Hanna Chen</div>
+                 </div>
+                 <ul class="nav navbar-nav header-ul">
+                     <li><a href="#">Home</a></li>
+                     <li><a href="#">About</a></li>
+                     <li><a href="#">Portfolio</a></li>
+                     <li><a href="#">Resume</a></li>
+                     <li><a href="contact_page.html">Contact</a></li>
+                 </ul>
+             </div>
+         </nav>
+
+         <div class="container main-contact">
+             <div class="main-contact-title">Contact Form</div>
+             <form class="form-horizontal main-contact-form" action="/action_page.php">
+               <fieldset>
+                   <legend>Personal Details</legend>
+                   <div class="form-group">
+                       <label class="control-label col-sm-2 main-contact-label" for="fName">Your Name:</label>
+                       <div class="col-sm-5">
+                           <input type="text" class="form-control" id="fName" placeholder="First Name" name="fName" required>
+                       </div>
+                       <div class="col-sm-5">
+                           <input type="text" class="form-control" id="lName" placeholder="Last Name" name="lName" required>
+                       </div>
+                   </div>
+                   <div class="form-group">
+                       <label class="control-label col-sm-2 main-contact-label" for="email">Your Email:</label>
+                       <div class="col-sm-10">
+                           <input type="email" class="form-control" id="email" placeholder="e.g.name@example.com" name="email">
+                       </div>
+                   </div>
+                   <div class="form-group">
+                       <label class="control-label col-sm-2 main-contact-label">Phone:</label>
+                       <div class="col-sm-3">
+                           <input type="text" class="form-control" id="code1" placeholder="###" name="code1" required>
+                       </div>
+                       <div class="col-sm-3">
+                           <input type="text" class="form-control" id="code2" placeholder="###" name="code2" required>
+                       </div>
+                       <div class="col-sm-4">
+                           <input type="text" class="form-control" id="code3" placeholder="####" name="code3" required>
+                       </div>
+                   </div>
+               </fieldset>
+               <fieldset>
+                     <legend>Message Details</legend>
+                   <div class="form-group">
+                     <div class="dropdown">
+                         <label class="control-label col-sm-2" for="sel1">Subject:</label>
+                         <div class="col-sm-10">
+                             <select class="form-control" id="sel1">
+                                 <option></option>
+                                 <option>General Question/Comment</option>
+                                 <option>Career/Job Related</option>
+                                 <option>Simply stating that I'm awesome</option>
+                             </select>
+                         </div>
+                     </div>
+                   </div>
+                   <div class="form-group">
+                       <label class="control-label col-sm-2" for="message">Message:</label>
+                       <div class="col-sm-10">
+                           <textarea class="form-control" rows="5" id="message" placeholder="Enter some texts here"></textarea>
+                       </div>
+                   </div>
+                   <div class="form-group">
+                       <label class="control-label form-question col-sm-12">How did you find this site?</label>
+                   </div>
+                   <div class="form-group">
+                           <label class="checkbox-inline form-checkbox col-sm-3">
+                               <input type="checkbox" value="">Search engine
+                           </label>
+                           <label class="checkbox-inline form-checkbox col-sm-3">
+                               <input type="checkbox" value="">Social media
+                           </label>
+                           <label class="checkbox-inline form-checkbox col-sm-3">
+                               <input type="checkbox" value="">Word of mouth
+                           </label>
+                           <label class="checkbox-inline form-checkbox col-sm-2">
+                               <input type="checkbox" value="">Other
+                           </label>
+                   </div>
+               </fieldset>
+                 <div class="send-form-button">
+                    <button id='submit' type="submit" class="btn btn-info">Send Form</button>
+                 </div>
+             </form>
+         </div>
+         <footer>
+             <div class="footer-area">
+                 <label>hannachen027@gmail.com</label>
+                 <span class="icons">
+                 <a href="#"><img src="facebook.png" alt="fb" id="fb" class="mediumimage"/></a>
+                 <a href="#"><img src="linkedin.png" alt="linkedin" id="linkedin" class="mediumimage"/></a>
+                 <a href="#"><img src="ins.png" alt="instagram" id="ins" class="mediumimage"/></a>
+                 </span>
+             </div>
+         </footer>
+     </section>
+    </body>
+</html>
