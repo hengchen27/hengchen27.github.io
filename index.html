@@ -1,120 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <link href="contact.css" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Pattaya" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
-        <meta name = "viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <title>Hanna's portfolio</title>
-    </head>
-    <body>
-     <div class="mainSection">
-         <nav class="navbar navbar-default header-nav">
-             <div class="container-fluid header-container">
-                 <div class="navbar-header">
-                     <div class="navbar-brand header-name" >Hanna Chen</div>
-                 </div>
-                 <ul class="nav navbar-nav header-ul">
-                     <li><a href="#">Home</a></li>
-                     <li><a href="#">About</a></li>
-                     <li><a href="#">Portfolio</a></li>
-                     <li><a href="#">Resume</a></li>
-                     <li><a href="index.html">Contact</a></li>
-                 </ul>
-             </div>
-         </nav>
+<head>
+    <meta charset="utf-8" />
+    <link href="index.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Pattaya" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+    <meta name = "viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Hanna's portfolio</title>
+</head>
+<body>
+<section class="mainSection">
+    <nav class="navbar navbar-default header-nav">
+        <div class="container-fluid header-container">
+            <div class="navbar-header">
+                <div class="navbar-brand header-name" >Hanna Chen</div>
+            </div>
+            <ul class="nav navbar-nav header-ul">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Resume</a></li>
+                <li><a href="index.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-         <div class="container main-contact">
-             <div class="main-contact-title">Contact Form</div>
-             <form class="form-horizontal main-contact-form" action="/action_page.php">
-               <fieldset>
-                   <legend>Personal Details</legend>
-                   <div class="form-group">
-                       <label class="control-label col-sm-2 main-contact-label" for="fName">Your Name:</label>
-                       <div class="col-sm-5">
-                           <input type="text" class="form-control" id="fName" placeholder="First Name" name="fName" required>
-                       </div>
-                       <div class="col-sm-5">
-                           <input type="text" class="form-control" id="lName" placeholder="Last Name" name="lName" required>
-                       </div>
-                   </div>
-                   <div class="form-group">
-                       <label class="control-label col-sm-2 main-contact-label" for="email">Your Email:</label>
-                       <div class="col-sm-10">
-                           <input type="email" class="form-control" id="email" placeholder="e.g.name@example.com" name="email">
-                       </div>
-                   </div>
-                   <div class="form-group">
-                       <label class="control-label col-sm-2 main-contact-label">Phone:</label>
-                       <div class="col-sm-3">
-                           <input type="text" class="form-control" id="code1" placeholder="###" name="code1" required>
-                       </div>
-                       <div class="col-sm-3">
-                           <input type="text" class="form-control" id="code2" placeholder="###" name="code2" required>
-                       </div>
-                       <div class="col-sm-4">
-                           <input type="text" class="form-control" id="code3" placeholder="####" name="code3" required>
-                       </div>
-                   </div>
-               </fieldset>
-               <fieldset>
-                     <legend>Message Details</legend>
-                   <div class="form-group">
-                     <div class="dropdown">
-                         <label class="control-label col-sm-2" for="sel1">Subject:</label>
-                         <div class="col-sm-10">
-                             <select class="form-control" id="sel1">
-                                 <option label="---">---</option>
-                                 <option>General Question/Comment</option>
-                                 <option>Career/Job Related</option>
-                                 <option>Simply stating that I'm awesome</option>
-                             </select>
-                         </div>
-                     </div>
-                   </div>
-                   <div class="form-group">
-                       <label class="control-label col-sm-2" for="message">Message:</label>
-                       <div class="col-sm-10">
-                           <textarea class="form-control" rows="5" id="message" placeholder="Enter some texts here"></textarea>
-                       </div>
-                   </div>
-                   <div class="form-group">
-                       <label class="control-label form-question col-sm-12">How did you find this site?</label>
-                   </div>
-                   <div class="form-group">
-                           <label class="checkbox-inline form-checkbox col-sm-3">
-                               <input type="checkbox" value="">Search engine
-                           </label>
-                           <label class="checkbox-inline form-checkbox col-sm-3">
-                               <input type="checkbox" value="">Social media
-                           </label>
-                           <label class="checkbox-inline form-checkbox col-sm-3">
-                               <input type="checkbox" value="">Word of mouth
-                           </label>
-                           <label class="checkbox-inline form-checkbox col-sm-2">
-                               <input type="checkbox" value="">Other
-                           </label>
-                   </div>
-               </fieldset>
-                 <div class="send-form-button">
-                    <button id='submit' type="submit" class="btn btn-info">Send Form</button>
-                 </div>
-             </form>
-         </div>
-         <footer>
-             <div class="footer-area">
-                 <label>hannachen027@gmail.com</label>
-                 <span class="icons">
+    <div class="container greeting">
+        <div class="greeting-title">Hey! I'm Hanna</div>
+        <div class="greeting-subtitle">A web student that has a passion in building beautiful and functional websites and cool applications</div>
+        <div class="greeting-button-section text-center">
+            <a href="#" class="btn btn-info greeting-button" role="button">VIEW SOME OF MY WORK</a>
+        </div>
+    </div>
+
+    <div class="container introduction">
+        <div class="introduction-title">
+            About Me
+        </div>
+        <div class="col-sm-3 introduction-image">
+            <img src="profile.png" alt="profile-pic" class="profile-image" >
+        </div>
+        <div class="col-sm-9 introduction-text">
+            <div class="introduction-content">
+                Hi, my name is Hanna Chen. I am in my last year of study in web development
+                stream of Information Technology Program at NSCC in Halifax,Canada.
+                Through intensive coursework and work-term, I have obtained must-have technical
+                skills in web development and design, with knowledge in both front-end and
+                back-end programming languages as well as popular frameworks.
+                Currently I am seeking a full-time front-end developer position to gain more
+                hands-on experience and expertise in IT industry.
+                This portfolio site is designed to show you a complete picture of myself including
+                my education/work experiences, skills, professional goals and work samples, and I
+                am looking forward to connecting with companies looking to hire or just anyone
+                having passion in web design & development like me!
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container call-to-action">
+        <p class="header-one">Looking for a motivated web developer with a wide skill set?</p>
+        <p class="header-two">Look no more, I am ready to use my expertise and knowledge to add value to your business and grow with it.</p>
+        <div class="contact-button-section">
+            <a href="#" class="btn button-one" role="button">GET IN TOUCH</a>
+            <a href="#" class="btn button-two" role="button">VIEW MY RESUME</a>
+        </div>
+        <div class="resume-button-section">
+
+        </div>
+    </div>
+
+    <div class="container work-samples">
+        <div class="sample-title">
+            Latest Work Samples
+        </div>
+        <div class="form-group">
+            <div class="sample-detail col-sm-4" >
+                <h3 class="sampleheader">React Application</h3>
+                <a href="#">
+                    <img src="sample1.png" alt="Sample one" class="worksample-image"/>
+                </a>
+            </div>
+            <div class="sample-detail col-sm-4">
+                <h3 class="sampleheader">Web Design</h3>
+                <a href="#">
+                    <img src="sample2.png"  alt="Sample two" class="worksample-image"/>
+                </a>
+            </div>
+            <div class="sample-detail col-sm-4">
+                <h3 class="sampleheader">Restful API Application</h3>
+                <a href="#">
+                    <img src="sample3.png" alt="Sample three" class="worksample-image"/>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container main-contact">
+        <div class="main-contact-title">Contact</div>
+        <form class="form-horizontal main-contact-form" action="/action_page.php">
+            <fieldset>
+                <div class="form-group">
+                    <label class="control-label col-sm-2 main-contact-label" for="name">Your Name</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="name" placeholder="Your name" name="name" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2 main-contact-label" for="email">Your Email</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="email" placeholder="e.g.name@example.com" name="email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2 main-contact-label">Message</label>
+                    <div class="col-sm-10">
+                        <textarea class="form-control" rows="5" id="message" placeholder="Enter some texts here"></textarea>
+                    </div>
+                </div>
+            </fieldset>
+            <div class="send-form-button">
+                <button id='submit' type="submit" class="sendform">Send</button>
+            </div>
+        </form>
+    </div>
+    <footer>
+        <div class="footer-area">
+            <label>hannachen027@gmail.com</label>
+            <span class="icons">
                  <a href="#"><img src="facebook.png" alt="fb" id="fb" class="mediumimage"/></a>
                  <a href="#"><img src="linkedin.png" alt="linkedin" id="linkedin" class="mediumimage"/></a>
                  <a href="#"><img src="ins.png" alt="instagram" id="ins" class="mediumimage"/></a>
-                 </span>
-             </div>
-         </footer>
-     </div>
-    </body>
+            </span>
+        </div>
+    </footer>
+</section>
+</body>
 </html>
