@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <link href="index.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Pattaya" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+    <meta name = "viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Hanna's portfolio</title>
+</head>
+<body>
+<section class="mainSection">
+    <nav class="navbar navbar-default header-nav">
+        <div class="container-fluid header-container">
+            <div class="navbar-header">
+                <div class="navbar-brand header-name" >Hanna Chen</div>
+            </div>
+            <ul class="nav navbar-nav header-ul">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#portfolio">Portfolio</a></li>
+                <li><a href="Resume_Hanna.pdf">Resume</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container portfolio-header" >
+        <div class="portfolio-title">Hello,</div>
+        <div class="portfolio-subtitle">Welcome to my portfolio!</div>
+    </div>
+
+    <div id="tvmaze" class="panel">
+        <h2>TV Maze</h2>
+        <div class="content">
+            <ul class="nav nav-pills nav-justified">
+                <li class="active"><a data-toggle="pill" href="#overview-1">Overview</a></li>
+                <li><a data-toggle="pill" href="#objective-1">Objective</a></li>
+                <li><a data-toggle="pill" href="#process-1">Process</a></li>
+                <li><a data-toggle="pill" href="#skills-1">Skills and Tools</a></li>
+                <li><a data-toggle="pill" href="#reflection-1">Reflection</a></li>
+            </ul>
+
+            <div class="tab-content portfolio-content">
+                <div id="overview-1" class="tab-pane fade in active">
+                    <div class="container">
+                        <div class="col-sm-6 portfolio-text">
+                            This piece was created for an assignment for my
+                            Full stack Programming class. This application
+                            allows user to either register or get authenticated
+                            by sending HTTP request, and then new users or
+                            authorized users can use tokens to access database
+                            information(customized DB created by myself) by
+                            sending other requests. And I have used postman
+                            and apitest.http file to use this application.This
+                            screenshot shows the response we get after we
+                            successfully send the request.
+                        </div>
+                        <div class="col-sm-6 portfolio-image-section">
+                            <img src="sample1.png" alt="Sample one" class="portfolio-image"/>
+                        </div>
+                    </div>
+                </div>
+                <div id="objective-1" class="tab-pane fade">
+                    <ul class="goallist">
+                        <li>Server-Side Programming Language: Java / PHP / NodeJS</li>
+                        <li>Client-Side Programming Language: JavaScript / React / HTML5 / CSS3</li>
+                        <li>Database Language: SQL / MySQL / SQLite</li>
+                        <li>Graphic Design: Adobe Photoshop / Illustrator</li>
+                        <li>Integrated Development Environment: Eclipse / WebStorm / PHPStorm / Visual Studio Code</li>
+                        <li>Source Control: GIT</li>
+                        <li>Operating System: Linux / Windows</li>
+                    </ul>
+                </div>
+                <div id="process-1" class="tab-pane fade">
+                    <h3>Where am I now?</h3>
+                    <p>
+                        2nd year web development student having fundamental development skills with HTML,CSS, JavaScript, PHP or Java and having some knowledge in SQL, Linux, web design, JS/php frameworks, restful APIs and MongoDB etc.
+                    </p>
+                </div>
+                <div id="skills-1" class="tab-pane fade">
+                    <h3>Where am I now?</h3>
+                    <p>
+                        2nd year web development student having fundamental development skills with HTML,CSS, JavaScript, PHP or Java and having some knowledge in SQL, Linux, web design, JS/php frameworks, restful APIs and MongoDB etc.
+                    </p>
+                </div>
+                <div id="reflection-1" class="tab-pane fade">
+                    <h3>Where am I now?</h3>
+                    <p>
+                        2nd year web development student having fundamental development skills with HTML,CSS, JavaScript, PHP or Java and having some knowledge in SQL, Linux, web design, JS/php frameworks, restful APIs and MongoDB etc.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="parrot" class="panel">
+        <h2>Web Design</h2>
+        <div class="content">
+            <ul class="nav nav-pills nav-justified">
+                <li><a href="#overview-2">Overview</a></li>
+                <li><a href="#objective-2">Objective</a></li>
+                <li><a href="#process-2">Process</a></li>
+                <li><a href="#skills-2">Skills and Tools</a></li>
+                <li><a href="#reflection-2">Reflection</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="restapi" class="panel">
+        <h2>Rest API</h2>
+        <div class="content">
+            <ul class="nav nav-pills nav-justified">
+                <li><a href="#overview-3">Overview</a></li>
+                <li><a href="#objective-3">Objective</a></li>
+                <li><a href="#process-3">Process</a></li>
+                <li><a href="#skills-3">Skills and Tools</a></li>
+                <li><a href="#reflection-3">Reflection</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-area">
+            <label>hannachen027@gmail.com</label>
+            <span class="icons">
+                 <a href="#"><img src="facebook.png" alt="fb" id="fb" class="mediumimage"/></a>
+                 <a href="#"><img src="linkedin.png" alt="linkedin" id="linkedin" class="mediumimage"/></a>
+                 <a href="#"><img src="ins.png" alt="instagram" id="ins" class="mediumimage"/></a>
+            </span>
+        </div>
+    </footer>
+</section>
+</body>
+</html>

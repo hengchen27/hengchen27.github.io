@@ -20,42 +20,83 @@
             </div>
             <ul class="nav navbar-nav header-ul">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Resume</a></li>
-                <li><a href="index.html">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="Resume_Hanna.pdf">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <div class="container greeting">
+    <div class="container greeting" >
         <div class="greeting-title">Hey! I'm Hanna</div>
         <div class="greeting-subtitle">A web student that has a passion in building beautiful and functional websites and cool applications</div>
         <div class="greeting-button-section text-center">
-            <a href="#" class="btn btn-info greeting-button" role="button">VIEW SOME OF MY WORK</a>
+            <a href="#portfolio" class="btn btn-info greeting-button" role="button">VIEW SOME OF MY WORK</a>
         </div>
     </div>
 
-    <div class="container introduction">
+    <div class="container introduction" id="about">
         <div class="introduction-title">
             About Me
         </div>
         <div class="col-sm-3 introduction-image">
             <img src="profile.png" alt="profile-pic" class="profile-image" >
         </div>
-        <div class="col-sm-9 introduction-text">
-            <div class="introduction-content">
-                Hi, my name is Hanna Chen. I am in my last year of study in web development
-                stream of Information Technology Program at NSCC in Halifax,Canada.
-                Through intensive coursework and work-term, I have obtained must-have technical
-                skills in web development and design, with knowledge in both front-end and
-                back-end programming languages as well as popular frameworks.
-                Currently I am seeking a full-time front-end developer position to gain more
-                hands-on experience and expertise in IT industry.
-                This portfolio site is designed to show you a complete picture of myself including
-                my education/work experiences, skills, professional goals and work samples, and I
-                am looking forward to connecting with companies looking to hire or just anyone
-                having passion in web design & development like me!
+        <div class="col-sm-9">
+            <div class="container introduction-text">
+                <ul class="nav nav-tabs intro-tabs">
+                    <li class="active"><a data-toggle="tab" href="#intro">Introduction</a></li>
+                    <li><a data-toggle="tab" href="#skills">Skills</a></li>
+                    <li><a data-toggle="tab" href="#goals">Goals</a></li>
+                </ul>
+
+                <div class="tab-content introduction-content">
+                    <div id="intro" class="tab-pane fade in active intro-divs">
+                        <p>Hi, my name is Hanna Chen. I am in my last year of study in web development
+                            stream of Information Technology Program at NSCC in Halifax,Canada.
+                            Through intensive coursework and work-term, I have obtained must-have technical
+                            skills in web development and design, with knowledge in both front-end and
+                            back-end programming languages as well as popular frameworks.
+                            Currently I am seeking a full-time front-end developer position to gain more
+                            hands-on experience and expertise in IT industry.
+                            This portfolio site is designed to show you a complete picture of myself including
+                            my education/work experiences, skills, professional goals and work samples, and I
+                            am looking forward to connecting with companies looking to hire or just anyone
+                            having passion in web design & development like me!</p>
+                    </div>
+                    <div id="skills" class="tab-pane fade intro-divs">
+                        <ul class="goallist">
+                            <li>Server-Side Programming Language: Java / PHP / NodeJS</li>
+                            <li>Client-Side Programming Language: JavaScript / React / HTML5 / CSS3</li>
+                            <li>Database Language: SQL / MySQL / SQLite</li>
+                            <li>Graphic Design: Adobe Photoshop / Illustrator</li>
+                            <li>Integrated Development Environment: Eclipse / WebStorm / PHPStorm / Visual Studio Code</li>
+                            <li>Source Control: GIT</li>
+                            <li>Operating System: Linux / Windows</li>
+                        </ul>
+                    </div>
+                    <div id="goals" class="tab-pane fade intro-divs">
+                        <h3>Where am I now?</h3>
+                        <p>
+                        2nd year web development student having fundamental development skills with HTML,CSS, JavaScript, PHP or Java and having some knowledge in SQL, Linux, web design, JS/php frameworks, restful APIs and MongoDB etc.
+                        </p>
+                        <h3>Where am I going?</h3>
+                        <p>
+                        Full stack developer with the ability to design the overall architecture of web applications implementation
+                        </p>
+                        <h3>How do I get there?</h3>
+                        <p>
+                            <ul class="goallist">
+                                <li>Continue to strengthen existing programming skills from the courses I am taking at NSCC.</li>
+                                <li>Connect with people working as full-stack web developers to get advice and learn from their experience</li>
+                                <li>Take online courses in learning websites like Lynda, Udemy to learn other skills required for the career goal</li>
+                                <li>Take time to reflect and improve the codes in previous assignments/project</li>
+                            </ul>
+                        </p>
+
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -65,41 +106,42 @@
         <p class="header-one">Looking for a motivated web developer with a wide skill set?</p>
         <p class="header-two">Look no more, I am ready to use my expertise and knowledge to add value to your business and grow with it.</p>
         <div class="contact-button-section">
-            <a href="#" class="btn button-one" role="button">GET IN TOUCH</a>
-            <a href="#" class="btn button-two" role="button">VIEW MY RESUME</a>
+            <a href="#contact" class="btn button-one" role="button">GET IN TOUCH</a>
+            <a href="Resume_Hanna.pdf" class="btn button-two" role="button">VIEW MY RESUME</a>
         </div>
         <div class="resume-button-section">
 
         </div>
     </div>
 
-    <div class="container work-samples">
+    <div class="container work-samples" id="portfolio">
         <div class="sample-title">
             Latest Work Samples
         </div>
         <div class="form-group">
             <div class="sample-detail col-sm-4" >
                 <h3 class="sampleheader">React Application</h3>
-                <a href="#">
+                <a href="portfolio.html">
                     <img src="sample1.png" alt="Sample one" class="worksample-image"/>
                 </a>
             </div>
             <div class="sample-detail col-sm-4">
                 <h3 class="sampleheader">Web Design</h3>
-                <a href="#">
+                <a href="portfolio.html">
                     <img src="sample2.png"  alt="Sample two" class="worksample-image"/>
                 </a>
             </div>
             <div class="sample-detail col-sm-4">
                 <h3 class="sampleheader">Restful API Application</h3>
-                <a href="#">
+                <a href="portfolio.html">
                     <img src="sample3.png" alt="Sample three" class="worksample-image"/>
                 </a>
             </div>
         </div>
     </div>
 
-    <div class="container main-contact">
+
+    <div class="container main-contact" id="contact">
         <div class="main-contact-title">Contact</div>
         <form class="form-horizontal main-contact-form" action="/action_page.php">
             <fieldset>

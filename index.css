@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 fieldset {
     display: block;
     margin-left: 2px;
@@ -136,13 +140,29 @@ a:hover {
     margin-bottom: 20px;
     font-family: "New Century Schoolbook", Times, serif;
 }
+.introduction-text {
+    width: 100% !important;
+    padding-bottom: 15px;
+    margin-top: 15px;
+}
+.intro-tabs li {
+    font-size: 18px !important;
+    font-weight: bold;
+}
+
+.intro-divs {
+    padding: 15px;
+}
+
+.goallist {
+    margin-left: -18px !important;
+}
 
 .profile-image {
     margin-left: 10px;
-    margin-top: 10px;
+    margin-top: 70px;
     margin-bottom: 60px;
     width: 200px;
-
 }
 
 .introduction-content {
@@ -283,4 +303,75 @@ a:hover {
     border: none;
     width:80px;
     text-align: center;
+}
+
+div.panel{
+    width: 100%;
+}
+
+div.panel h2 {
+    text-align: center;
+}
+
+div.panel ul li a{
+
+}
+
+div.panel ul li a {
+    border-style: ridge;
+    border-color: gray;
+    border-width: thin;
+    color:black !important;
+    background-color: #6ca58b !important;
+}
+
+div.panel ul li.active a {
+    background-color: white !important;
+}
+
+div.portfolio-content {
+    padding: 40px;
+    font-size: 18px;
+}
+
+div.portfolio-text {
+    padding-left: 0px !important;
+    padding-right: 15px !important;
+}
+
+div.portfolio-image-section {
+    padding-left: 15px !important;
+}
+
+.portfolio-image {
+    width: 95%;
+    display: block;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.portfolio-header {
+    background: url("portfolio.jpg") no-repeat;
+    background-size: cover !important;
+    margin: auto !important;
+    width: 100% !important;
+    font-family: Book Antiqua,Palatino,Palatino Linotype,Palatino LT STD,Georgia,serif;
+}
+
+.portfolio-title {
+    font-size: 55px;
+    text-align: center;
+    font-weight: bold;
+    color: #6ca58b;
+    margin-top: 240px;
+    margin-bottom: 65px;
+}
+
+.portfolio-subtitle {
+    font-size: 45px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    margin-top: 60px;
+    margin-bottom: 160px;
 }
