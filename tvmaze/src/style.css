@@ -1,0 +1,17 @@
+.full-width {
+    width: 100%;
+  }
+
+  .small-image {
+    width: 100px;
+    display: inline-block;
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .side-info {
+    display: inline-block;
+  }
