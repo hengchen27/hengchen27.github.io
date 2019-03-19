@@ -1,0 +1,34 @@
+<html>
+<head>
+    <title>HTML5 Course</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.createjs.com/createjs-2015.05.21.min.js"></script>
+    <script src="scripts.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <style>
+        #totalProgress {
+           border: 1px solid black; 
+           width: 1000px; 
+           height: 20px;
+           }
+        #currentProgress {
+           height: 20px;  
+           background-color: green;   
+       }   
+    </style>
+</head>
+<body>
+    <div id="totalProgress"><div id="currentProgress"></div></div>
+    <canvas id="testCanvas" width="1000" height="600"></canvas>
+    <section id="levels">
+            <section id="option"><h2>Options</h2></section>
+            <button type="button" class="btn btn-outline-success btn-lg level" id="buttonLv1">Game Level 1</button><br/>
+            <button type="button" class="btn btn-outline-success btn-lg level" id="buttonLv2">Game Level 2</button><br/>
+            <button type="button" class="btn btn-outline-success btn-lg level" id="buttonLv3">Game Level 3</button><br/>
+            <button type="button" class="btn btn-outline-success btn-lg level" id="buttonLv4">Game Level 4</button>
+    </section>
+</body>
+</html>

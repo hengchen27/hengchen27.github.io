@@ -1,0 +1,21 @@
+canvas#testCanvas {
+    border: 1px solid black;
+    margin: auto;
+    text-align: center;
+}
+
+section#levels{
+    display: inline-block;
+    position: fixed;
+    margin-top: 0px;
+}
+
+button.level{
+    margin: 20px;
+    /* background:  */
+}
+
+section#option{
+    margin: 20px;
+    text-align: center;
+}
