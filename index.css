@@ -375,3 +375,10 @@ div.portfolio-image-section {
     margin-top: 60px;
     margin-bottom: 160px;
 }
+
+.sendMessage {
+    display: none;
+    text-align: center;
+    font-size: 20px;
+    color: yellow;
+}

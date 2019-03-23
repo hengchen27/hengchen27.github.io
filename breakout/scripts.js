@@ -5,7 +5,6 @@ var progressDivElement = document.getElementById('currentProgress');
 var manifest = [
 	{src: "assets/fruit.json", id: "sheet1", type: "spritesheet"},	
 	{src: "assets/Game-Break.mp3", id: "soundBreak", type: "sound"},
-	{src: "https://upload.wikimedia.org/wikipedia/commons/f/fe/A_Different_Slant_on_Carina.jpg", id: "image1", type: "image"},
 	{src: "assets/Game-Shot.mp3", id: "soundShot",type: "sound"},
 	{src: "assets/Game-Death.mp3", id: "soundDeath",type: "sound"}
 ];

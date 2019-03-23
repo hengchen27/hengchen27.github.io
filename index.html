@@ -9,6 +9,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init("user_BaxcJQgbXttdr5hoFISms");
+       })();
+    </script>
+    <script src="index.js"></script>
     <title>Hanna's portfolio</title>
 </head>
 <body>
@@ -120,21 +127,21 @@
         </div>
         <div class="form-group">
             <div class="sample-detail col-sm-4" >
-                <h3 class="sampleheader">React Application</h3>
-                <a href="portfolio.html">
+                <h3 class="sampleheader">Break Out Game</h3>
+                <a href="portfolio.html#breakout">
                     <img src="sample1.png" alt="Sample one" class="worksample-image"/>
                 </a>
             </div>
             <div class="sample-detail col-sm-4">
                 <h3 class="sampleheader">Web Design</h3>
-                <a href="portfolio.html">
+                <a href="portfolio.html#webdesign">
                     <img src="sample2.png"  alt="Sample two" class="worksample-image"/>
                 </a>
             </div>
             <div class="sample-detail col-sm-4">
-                <h3 class="sampleheader">Restful API Application</h3>
-                <a href="portfolio.html">
-                    <img src="sample3.png" alt="Sample three" class="worksample-image"/>
+                <h3 class="sampleheader">E-Reader</h3>
+                <a href="portfolio.html#ereader">
+                    <img src="eReader.png" alt="Sample three" class="worksample-image"/>
                 </a>
             </div>
         </div>
@@ -143,29 +150,32 @@
 
     <div class="container main-contact" id="contact">
         <div class="main-contact-title">Contact</div>
-        <form class="form-horizontal main-contact-form" action="/action_page.php">
+        <form class="form-horizontal main-contact-form" id="contact-form">
+            <input type="hidden" name="contact_number">
+            <input type="hidden" name="to_name" value="Hanna">
             <fieldset>
                 <div class="form-group">
                     <label class="control-label col-sm-2 main-contact-label" for="name">Your Name</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" id="name" placeholder="Your name" name="name" required>
+                        <input type="text" class="form-control" name="from_name" placeholder="Your name" name="name" required>
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="control-label col-sm-2 main-contact-label" for="email">Your Email</label>
                     <div class="col-sm-10">
-                        <input type="email" class="form-control" id="email" placeholder="e.g.name@example.com" name="email">
+                        <input type="email" class="form-control" name="user_email" placeholder="e.g.name@example.com" name="email">
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="control-label col-sm-2 main-contact-label">Message</label>
                     <div class="col-sm-10">
-                        <textarea class="form-control" rows="5" id="message" placeholder="Enter some texts here"></textarea>
+                        <textarea class="form-control" rows="5" name="message_html" placeholder="Enter some texts here"></textarea>
                     </div>
                 </div>
+                <label id="sendEmailMessage" class="sendMessage">Your message is sent!</label>
             </fieldset>
             <div class="send-form-button">
-                <button id='submit' type="submit" class="sendform">Send</button>
+                <input type="submit" class="sendform" value="Send">
             </div>
         </form>
     </div>

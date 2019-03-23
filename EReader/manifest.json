@@ -1,0 +1,29 @@
+{
+    "lastupdate": "2017-04-03T05:00:00",
+    "books": [
+        {
+            "id" : 1,
+            "title" : "A Book About Lawyers",
+            "author" : "John Cordy Jeaffreson",
+            "language" : "en",
+            "url" : "BookAboutLawyers.html",
+            "lastupdate": "2017-03-31"
+        },
+        {
+            "id" : 2,
+            "title" : "The Wind in the Willows",
+            "author" : "Kenneth Grahame",
+            "language" : "en",
+            "url" : "WindInTheWillows.html",
+            "lastupdate": "2017-03-31"
+        },
+        {
+            "id" : 3,
+            "title" : "The Book About Doctors",
+            "author" : "John Cordy Jeaffreson",
+            "language" : "en",
+            "url" : "BookAboutDoctors.html",
+            "lastupdate": "2017-03-31"
+        }
+    ]
+}

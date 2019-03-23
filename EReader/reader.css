@@ -1,0 +1,42 @@
+div#bookContent {
+    display: none;
+}
+
+div#bookContent {
+    border-width: 1px;
+    border-style: solid;
+    min-height: 500px;
+    width: 1200px;
+}
+
+
+div#tocSection {
+    display: table-cell;
+    border-width: 1px;
+    width: 450px;
+    height: 100%;
+    min-height: 500px;
+    border-right-style: solid;
+    position: relative;
+    vertical-align: top;
+}
+
+div#contentSection {
+    display: table-cell;
+    width: 600px;
+    min-height: 500px;
+    padding: 15px;
+}
+
+body {
+    background-color: #649c9c;
+}
+
+#buttonSection {
+    margin-top: 50px;
+}
+
+header {
+    color: #b63f5b;
+}
+
