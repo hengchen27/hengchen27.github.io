@@ -5,11 +5,22 @@
     <link href="index.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Pattaya" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
     <meta name = "viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <title>Hanna's portfolio</title>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+    </script>    
 </head>
 <body>
 <section class="mainSection">
@@ -17,14 +28,15 @@
         <div class="container-fluid header-container">
             <div class="navbar-header">
                 <div class="navbar-brand header-name" >Hanna Chen</div>
+                <div class="topnav" id="myTopnav">
+                    <a href="index.html">Home</a>
+                    <a href="index.html#about">About</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="pdfjs/web/viewer.html?file=Resume_Hanna.pdf">Resume</a>
+                    <a href="index.html#contact">Contact</a>
+                    <a href="javascript:void(0);" style="font-size:21px;" class="icon" onclick="myFunction()" >&#9776;</a>
+                </div>
             </div>
-            <ul class="nav navbar-nav header-ul">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="index.html#portfolio">Portfolio</a></li>
-                <li><a href="Resume_Hanna.pdf">Resume</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
-            </ul>
         </div>
     </nav>
 
@@ -48,16 +60,17 @@
                 <div id="overview-1" class="tab-pane fade in active">
                     <div class="container">
                         <div class="col-sm-6 portfolio-text">
-                            This piece was created for an assignment for my
-                            Full stack Programming class. This application
-                            allows user to either register or get authenticated
-                            by sending HTTP request, and then new users or
-                            authorized users can use tokens to access database
-                            information(customized DB created by myself) by
-                            sending other requests. And I have used postman
-                            and apitest.http file to use this application.This
-                            screenshot shows the response we get after we
-                            successfully send the request.
+                            This piece was created for an assignment which is basically a JavaScript Game using CreateJS
+                            for Special Topic I Class. This game has the following features: (1) different game levels
+                            with different patterns of bricks to break (2) different types of bricks (i.e. a different
+                            colour bricks that takes more than one hit to break and change colour to show breaking
+                            progress) (3) special bricks that drop power ups that your paddle can catch for upgrades and
+                            one of these power-ups must be a second ball (4) a timer for each level so bricks have to be
+                            broken within the time frame (5) High score functionality stored in local storage (6) Animation
+                            with SpriteSheet, sound files for game events, both keyboard and mouse controls, and show
+                            progress bar when loading the game. <br/>
+                            The screenshot on the right shows the starting screen
+                            after choosing the level 4.
 
                             <br/><br/>
 
@@ -69,32 +82,35 @@
                     </div>
                 </div>
                 <div id="objective-1" class="tab-pane fade">
-                    <ul class="goallist">
-                        <li>Server-Side Programming Language: Java / PHP / NodeJS</li>
-                        <li>Client-Side Programming Language: JavaScript / React / HTML5 / CSS3</li>
-                        <li>Database Language: SQL / MySQL / SQLite</li>
-                        <li>Graphic Design: Adobe Photoshop / Illustrator</li>
-                        <li>Integrated Development Environment: Eclipse / WebStorm / PHPStorm / Visual Studio Code</li>
-                        <li>Source Control: GIT</li>
-                        <li>Operating System: Linux / Windows</li>
-                    </ul>
+                    The highlight of this JavaScript game application is to use CreateJS, which is to create animations
+                    (SpriteSheet) and interactive content（ for example SoundJS and PreloadJS） on our HTML5 pages in
+                    combination with basics of HTML5 Canvas and User Input by Keyboard and Mouse. Besides. As for game
+                    design itself, it is a dramatically beefed up version of simple break out game that was learned and
+                    built through a tutorial.
                 </div>
                 <div id="process-1" class="tab-pane fade">
-                    <h3>Where am I now?</h3>
                     <p>
-                        2nd year web development student having fundamental development skills with HTML,CSS, JavaScript, PHP or Java and having some knowledge in SQL, Linux, web design, JS/php frameworks, restful APIs and MongoDB etc.
+                        Following the requirements(features) of this assignment, I started with designing the game
+                        levels, brick patterns and brick colors logic as well as a countdown timer. After that, I added
+                        animations by using Sprite Sheet for showing drop-drown items when hitting special bricks with
+                        its logic. In addition to that, I added several sound files and a game loading progress bar with
+                        CreateJS. The whole process is done step by step by following the requirements of an advanced
+                        version of breakout game.
                     </p>
                 </div>
                 <div id="skills-1" class="tab-pane fade">
-                    <h3>Where am I now?</h3>
-                    <p>
-                        2nd year web development student having fundamental development skills with HTML,CSS, JavaScript, PHP or Java and having some knowledge in SQL, Linux, web design, JS/php frameworks, restful APIs and MongoDB etc.
-                    </p>
+                    <ul class="goallist">
+                        <li>Skills: HTML/CSS/JavaScript/CreateJS/SpriteSheets/Bootstrap/Jquery </li>
+                        <li>Tools: TexturePacker(sprite sheet generation tool)/ Pixilart(free online pixel drawing tool), Visual Studio Code(code editor)</li>
+                    </ul>
                 </div>
                 <div id="reflection-1" class="tab-pane fade">
-                    <h3>Where am I now?</h3>
                     <p>
-                        2nd year web development student having fundamental development skills with HTML,CSS, JavaScript, PHP or Java and having some knowledge in SQL, Linux, web design, JS/php frameworks, restful APIs and MongoDB etc.
+                        By building this application, I have picked up and strengthened the skills  gained  in year 1
+                        like HTML/CSS/JavaScript and learned how to use canvas/ add animations, and incorporate other
+                        user input by using keyboard and mouse controls, most importantly, I got to understand how to
+                        make use of CreateJS for animations and interactive contents. The biggest challenges are
+                        preparing Sprite Sheet and designing the animation parts for the game.
                     </p>
                 </div>
             </div>
@@ -116,60 +132,63 @@
             <div id="overview-2" class="tab-pane fade in active">
                 <div class="container">
                     <div class="col-sm-6 portfolio-text">
-                        This piece was created for an assignment for my
-                        Full stack Programming class. This application
-                        allows user to either register or get authenticated
-                        by sending HTTP request, and then new users or
-                        authorized users can use tokens to access database
-                        information(customized DB created by myself) by
-                        sending other requests. And I have used postman
-                        and apitest.http file to use this application.This
-                        screenshot shows the response we get after we
-                        successfully send the request.
-
+                        This application was created for one of the assignments in Client-side Programming in Year 1,
+                        which is basically a single HTML page library system that will load a list of available books
+                        from the server. Users are able to download books from the library and store them locally for
+                        reading anywhere. As for the layout of the book reader, there are two views-the first view gives
+                        the user a list of books that are available in the system, and the second is the reading view
+                        containing a table of contents and a reading pane.<br/>
+                        The screenshot on the right shows the second view of the E-reader.
                         <br/><br/>
 
                         <a href="EReader/">Check out finished E-Reader</a>
                     </div>
                     <div class="col-sm-6 portfolio-image-section">
-                        <img src="eReader.PNG" alt="Sample one" class="portfolio-image"/>
+                        <img src="eReader.png" alt="Sample one" class="portfolio-image"/>
                     </div>
                 </div>
             </div>
             <div id="objective-2" class="tab-pane fade">
+                <p>The highlight of this assignment is about “caching”, and in this case we are storing 3 main types of
+                    data: the reader (our webpage), the manifest (the list of books), and the books themselves.  Other
+                    specific goals are displayed as below:</p>
                 <ul class="goallist">
-                    <li>Server-Side Programming Language: Java / PHP / NodeJS</li>
-                    <li>Client-Side Programming Language: JavaScript / React / HTML5 / CSS3</li>
-                    <li>Database Language: SQL / MySQL / SQLite</li>
-                    <li>Graphic Design: Adobe Photoshop / Illustrator</li>
-                    <li>Integrated Development Environment: Eclipse / WebStorm / PHPStorm / Visual Studio Code</li>
-                    <li>Source Control: GIT</li>
-                    <li>Operating System: Linux / Windows</li>
+                    <li>Manifest is refreshed periodically</li>
+                    <li>Manifest is downloaded </li>
+                    <li>Book List is stored in database</li>
+                    <li>Book List shows which books have been downloaded and which are available for download</li>
+                    <li>Switch between Views</li>
+                    <li>Selection of book transitions to reader view</li>
+                    <li>Books are stored in database and retrieved from it</li>
+                    <li>Table of Contents is generated </li>
+                    <li>Button to delete all stored data is available. </li>
                 </ul>
             </div>
             <div id="process-2" class="tab-pane fade">
-                <h3>Where am I now?</h3>
                 <p>
-                    2nd year web development student having fundamental development skills with HTML,CSS, JavaScript, PHP or Java and having some knowledge in SQL, Linux, web design, JS/php frameworks, restful APIs and MongoDB etc.
+                    The process started by identifying the basic folder structure, the reader, the manifest and books
+                    folder. I also created a readerHelper class for methods dealing with things like updating the book
+                    list on the page, downloading books, removing books, creating book list and updating book content etc.
+                    There is also a reader.js for creating an object of  the readerHelper class and defining book class
+                    and database object to store all the books as well as a timer for continuously pulling data.
                 </p>
             </div>
             <div id="skills-2" class="tab-pane fade">
-                <h3>Where am I now?</h3>
-                <p>
-                    2nd year web development student having fundamental development skills with HTML,CSS, JavaScript, PHP or Java and having some knowledge in SQL, Linux, web design, JS/php frameworks, restful APIs and MongoDB etc.
-                </p>
+                <ul class="goallist">
+                    <li>Skills: HTML/CSS/Vanilla JavaScript/bootstrap</li>
+                    <li>Tools: WebStorm/books resources</li>
+                </ul>
             </div>
             <div id="reflection-2" class="tab-pane fade">
-                <h3>Where am I now?</h3>
-                <p>
-                    2nd year web development student having fundamental development skills with HTML,CSS, JavaScript, PHP or Java and having some knowledge in SQL, Linux, web design, JS/php frameworks, restful APIs and MongoDB etc.
+                <p> By building this E-reader application, I have gained a better understanding of several topics
+                    including HTML Web storage, Javascript class, manifest, and how to update caches periodically.
                 </p>
             </div>
         </div>
     </div>
 
-    <div id="webdesign" class="panel">
-        <h2>Web Design</h2>
+    <div id="nscccourse" class="panel">
+        <h2>NSCC IT Course PWA</h2>
         <div class="content">
             <ul class="nav nav-pills nav-justified">
                 <li class="active"><a data-toggle="pill" href="#overview-3">Overview</a></li>
@@ -183,53 +202,62 @@
                 <div id="overview-3" class="tab-pane fade in active">
                     <div class="container">
                         <div class="col-sm-6 portfolio-text">
-                            This piece was created for an assignment for my
-                            Full stack Programming class. This application
-                            allows user to either register or get authenticated
-                            by sending HTTP request, and then new users or
-                            authorized users can use tokens to access database
-                            information(customized DB created by myself) by
-                            sending other requests. And I have used postman
-                            and apitest.http file to use this application.This
-                            screenshot shows the response we get after we
-                            successfully send the request.
-
+                            This piece was created for the final assignment for Web Application Programming II. The main
+                            structure was similar and taken from the Weather Progressive Web App (PWA) that I previously created.
+                            For this application, the data was taken from my NSCC Course Map API (ASP.Net Core Web API
+                            completed in previous assignment) that has been deployed on Microsoft Azure. In this app,
+                            the home page will provide users a list of IT Courses at NSCC and will display course details
+                            when clicking/tapping on selected one. This app also has employed caching strategies for
+                            caching the app shell and data from the API. <br/>
+                            The screenshot on the right shows the page of course list when app starts up.
                             <br/><br/>
 
+                            <a href="https://nsccitcourses.firebaseapp.com/index.html">Check out my work on Firebase</a>
+                            
                         </div>
                         <div class="col-sm-6 portfolio-image-section">
-                            <img src="sample2.png" alt="Sample one" class="portfolio-image"/>
+                            <img src="sample5.png" alt="Sample one" class="portfolio-image"/>
                         </div>
                     </div>
                 </div>
                 <div id="objective-3" class="tab-pane fade">
+                    <p> The application will display a list of Courses when the application starts up. These courses
+                        should be accessed via your live NSCC Course Map API. </p>
+                    <p> When a user clicks on or taps a course, it should bring them to another page which will display
+                        the details for that course, including the prerequisites and the isprerequisitefor collections. </p>
+                    <p> The app should employ some caching strategy described as below:
                     <ul class="goallist">
-                        <li>Server-Side Programming Language: Java / PHP / NodeJS</li>
-                        <li>Client-Side Programming Language: JavaScript / React / HTML5 / CSS3</li>
-                        <li>Database Language: SQL / MySQL / SQLite</li>
-                        <li>Graphic Design: Adobe Photoshop / Illustrator</li>
-                        <li>Integrated Development Environment: Eclipse / WebStorm / PHPStorm / Visual Studio Code</li>
-                        <li>Source Control: GIT</li>
-                        <li>Operating System: Linux / Windows</li>
+                        <li> The app should cache the app shell and use the cached version until the cache version is updated in the service worker file. </li>
+                        <li> The app should cache a list of courses upon successful retrieval of the courses data from the API. </li>
+                        <li> The app should cache any course details for any selected course from the main list. </li>
                     </ul>
+                    </p>
+                    <p> Deploy the app to some hosting platform to be accessible like Firebase. </p>
+
                 </div>
                 <div id="process-3" class="tab-pane fade">
-                    <h3>Where am I now?</h3>
                     <p>
-                        2nd year web development student having fundamental development skills with HTML,CSS, JavaScript, PHP or Java and having some knowledge in SQL, Linux, web design, JS/php frameworks, restful APIs and MongoDB etc.
+                        I started building this application by modifying the files of the weather WAP and adding details
+                        page and its JavaScript file. The biggest part of the work is to successfully call the course map
+                        api (I added a new CORS policy in the program.cs of my api project to make it work). Apart from
+                        getting all the required data, another challenge is the details page which requires you get a new
+                        url for the page as well as getting the CourseID for each selected course. The caching strategy
+                        of this application doesn’t have too much change though.
                     </p>
                 </div>
                 <div id="skills-3" class="tab-pane fade">
-                    <h3>Where am I now?</h3>
-                    <p>
-                        2nd year web development student having fundamental development skills with HTML,CSS, JavaScript, PHP or Java and having some knowledge in SQL, Linux, web design, JS/php frameworks, restful APIs and MongoDB etc.
-                    </p>
+                    <ul class="goallist">
+                        <li>Skills: HTML/CSS/JavaScript/ASP.NET/</li>
+                        <li>Tools: Visual Studio Code/Weather WPA/NSCC Course Map Api (data resource) </li>
+                    </ul>
                 </div>
                 <div id="reflection-3" class="tab-pane fade">
-                    <h3>Where am I now?</h3>
                     <p>
-                        2nd year web development student having fundamental development skills with HTML,CSS, JavaScript, PHP or Java and having some knowledge in SQL, Linux, web design, JS/php frameworks, restful APIs and MongoDB etc.
-                    </p>
+                        By completing the final assignment, I have had a deeper understanding of the popular concept of
+                        progressive web app, and I have had an opportunity to combine what I have completed earlier
+                        (the NSCC Course Map API) with the client I created in this assignment. In addition to that,
+                        the course data obtained from API are displayed in an appropriate and clear way on two pages,
+                        which will be very helpful to the users who are interested in knowing IT courses offered by NSCC.
                 </div>
             </div>
         </div>
@@ -250,16 +278,13 @@
                 <div id="overview-4" class="tab-pane fade in active">
                     <div class="container">
                         <div class="col-sm-6 portfolio-text">
-                            This piece was created for an assignment for my
-                            Full stack Programming class. This application
-                            allows user to either register or get authenticated
-                            by sending HTTP request, and then new users or
-                            authorized users can use tokens to access database
-                            information(customized DB created by myself) by
-                            sending other requests. And I have used postman
-                            and apitest.http file to use this application.This
-                            screenshot shows the response we get after we
-                            successfully send the request.
+                            This piece was created for an assignment for my Full stack Programming class. This application
+                            allows user to enter keyword in search of tv shows (api data from TV Maze), and the search
+                            result will show 10 records that matches the user’s search. When the user clicks on any tv
+                            show from the list, more details of this tv show will be displayed on the right of the panel,
+                            and there is a cast list button which will display the cast information when clicked.
+                            This will be kept open when the user switches between different tv shows until he/she tries a new search.
+                            The screenshot on the right shows the screen when user starts a research and clicks on one of the tv shows.
 
                             <br/><br/>
 
@@ -272,31 +297,32 @@
                 </div>
                 <div id="objective-4" class="tab-pane fade">
                     <ul class="goallist">
-                        <li>Server-Side Programming Language: Java / PHP / NodeJS</li>
-                        <li>Client-Side Programming Language: JavaScript / React / HTML5 / CSS3</li>
-                        <li>Database Language: SQL / MySQL / SQLite</li>
-                        <li>Graphic Design: Adobe Photoshop / Illustrator</li>
-                        <li>Integrated Development Environment: Eclipse / WebStorm / PHPStorm / Visual Studio Code</li>
-                        <li>Source Control: GIT</li>
-                        <li>Operating System: Linux / Windows</li>
+                        <li> The application will need to maintain the state necessary for the correct functioning of the application </li>
+                        <li> The application will need to make at least two separate calls to the TV Maze API to retrieve all of the required data. </li>
+                        <li>It allows the end-user to enter a search term in a text box and trigger a search either by clicking an accompanying button or by leveraging the change event of the text box ></li>
+                        <li>It allows the end-user to click on a single search result to trigger the available details of the show to appear in the ShowDisplay component </li>
+                        <li>The tv show details section displays the image for the selected show when available. If an image is not available, a generic image informing the end-user that an image is not available should be displayed. </li>
+                        <li> It initially displays a button that prompts the user to click in order to retrieve cast data from the API about the currently selected show. Once clicked, the component should then display either a list if cast results, or if no results are returned, a message stating so. As for Cast list data, once loaded for a selected show, should not have to be reloaded until such a time as a new search is performed and a new set of search results is returned. </li>
                     </ul>
                 </div>
                 <div id="process-4" class="tab-pane fade">
-                    <h3>Where am I now?</h3>
                     <p>
-                        2nd year web development student having fundamental development skills with HTML,CSS, JavaScript, PHP or Java and having some knowledge in SQL, Linux, web design, JS/php frameworks, restful APIs and MongoDB etc.
+                        The React Application was completed by taking many steps, and the first and most important step
+                        was to build all the required components and determine the parent-child relationships of them.
+                        After that, I followed the instructions for each component to display the required data called from TV Maze API .
                     </p>
                 </div>
                 <div id="skills-4" class="tab-pane fade">
-                    <h3>Where am I now?</h3>
-                    <p>
-                        2nd year web development student having fundamental development skills with HTML,CSS, JavaScript, PHP or Java and having some knowledge in SQL, Linux, web design, JS/php frameworks, restful APIs and MongoDB etc.
-                    </p>
+                    <ul class="goallist">
+                        <li>Skills: ReactJS/Javascript/html/CSS/W3.css/</li>
+                        <li>Tools: Visual Studio Code/TVMaze API (data resource)</li>
+                    </ul>
                 </div>
                 <div id="reflection-4" class="tab-pane fade">
-                    <h3>Where am I now?</h3>
                     <p>
-                        2nd year web development student having fundamental development skills with HTML,CSS, JavaScript, PHP or Java and having some knowledge in SQL, Linux, web design, JS/php frameworks, restful APIs and MongoDB etc.
+                        This is the first React Application I built after learning ReactJS. It has reflected all the key
+                        concepts in React like props, state, JSX, components and lifecycle methods. It has used the data
+                        from TVMaze API in an informative and clear way that will be a very useful tv show search tool for users.
                     </p>
                 </div>
             </div>
@@ -331,9 +357,15 @@
 
                             <br/><br/>
 
+                            <a href="https://github.com/hengchen27/gapAnalysis">Check out my source code on GitHub</a>
+
+                            <br/><br/>
+
+                            <a href="gap-analysis-react-native.pptx">Check out my Presentation Slide</a>
+
                         </div>
                         <div class="col-sm-6 portfolio-image-section">
-                           
+                            <img src="sample6.png" alt="Sample one" class="portfolio-image"/>
                         </div>
                     </div>
                 </div>

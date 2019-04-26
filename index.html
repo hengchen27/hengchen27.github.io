@@ -5,6 +5,7 @@
     <link href="index.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Pattaya" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
     <meta name = "viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -17,6 +18,16 @@
     </script>
     <script src="index.js"></script>
     <title>Hanna's portfolio</title>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+    </script>
 </head>
 <body>
 <section class="mainSection">
@@ -24,20 +35,28 @@
         <div class="container-fluid header-container">
             <div class="navbar-header">
                 <div class="navbar-brand header-name" >Hanna Chen</div>
+                <div class="topnav" id="myTopnav">
+                    <a href="#">Home</a>
+                    <a href="#about">About</a>   
+                    <a href="portfolio.html">Portfolio</a> 
+                    <a href="pdfjs/web/viewer.html?file=Resume_HannaChen.pdf">Resume</a>
+                    <a href="#contact">Contact</a>
+                    <a href="javascript:void(0);" style="font-size:21px;" class="icon" onclick="myFunction()" >&#9776;</a>
+                </div>
             </div>
-            <ul class="nav navbar-nav header-ul">
+            <!-- <ul class="nav navbar-nav header-ul">
                 <li><a href="#">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="Resume_Hanna.pdf">Resume</a></li>
                 <li><a href="#contact">Contact</a></li>
-            </ul>
+            </ul> -->
         </div>
     </nav>
 
     <div class="container greeting" >
         <div class="greeting-title">Hey! I'm Hanna</div>
-        <div class="greeting-subtitle">A web student that has a passion in building beautiful and functional websites and cool applications</div>
+        <div class="greeting-subtitle">An IT graduate that has a passion in building websites and cool applications</div>
         <div class="greeting-button-section text-center">
             <a href="#portfolio" class="btn btn-info greeting-button" role="button">VIEW SOME OF MY WORK</a>
         </div>
@@ -50,7 +69,9 @@
         <div class="col-sm-3 introduction-image">
             <img src="profile.png" alt="profile-pic" class="profile-image" >
         </div>
-        <div class="col-sm-9">
+        <div class="col-sm-1">
+        </div>
+        <div class="col-sm-8">
             <div class="container introduction-text">
                 <ul class="nav nav-tabs intro-tabs">
                     <li class="active"><a data-toggle="tab" href="#intro">Introduction</a></li>
@@ -60,48 +81,48 @@
 
                 <div class="tab-content introduction-content">
                     <div id="intro" class="tab-pane fade in active intro-divs">
-                        <p>Hi, my name is Hanna Chen. I am in my last year of study in web development
-                            stream of Information Technology Program at NSCC in Halifax,Canada.
-                            Through intensive coursework and work-term, I have obtained must-have technical
-                            skills in web development and design, with knowledge in both front-end and
-                            back-end programming languages as well as popular frameworks.
-                            Currently I am seeking a full-time front-end developer position to gain more
-                            hands-on experience and expertise in IT industry.
-                            This portfolio site is designed to show you a complete picture of myself including
-                            my education/work experiences, skills, professional goals and work samples, and I
-                            am looking forward to connecting with companies looking to hire or just anyone
-                            having passion in web design & development like me!</p>
+                        <p>Hi, my name is Hanna Chen. I am about to finish my last year of study in web development stream
+                            of Information Technology Program at NSCC in Halifax, Canada. Through intensive coursework
+                            and work term, I have obtained must-have technical skills in web development, with knowledges
+                            in both front-end and back-end programming languages as well as popular frameworks.
+                            Currently I am seeking a full-time web developer position to gain more hands-on experience
+                            and expertise in IT industry. This portfolio site is designed to show people a complete picture
+                            of myself including my education/work experiences, skills, professional goals and work samples,
+                            and I am looking forward to connecting with companies looking to hire or just anyone having
+                            passion in web design & development like me!</p>
                     </div>
                     <div id="skills" class="tab-pane fade intro-divs">
                         <ul class="goallist">
-                            <li>Server-Side Programming Language: Java / PHP / NodeJS</li>
-                            <li>Client-Side Programming Language: JavaScript / React / HTML5 / CSS3</li>
-                            <li>Database Language: SQL / MySQL / SQLite</li>
+                            <li>Server-Side Programming Language: Java / PHP / C#</li>
+                            <li>Client-Side Programming Language: JavaScript / HTML5 / CSS3 /AJAX</li>
+                            <li>Web Development Frameworks: React.js/ASP.NET/Node.js/Express.js/Laravel</li>
+                            <li>Content Management System: WordPress/Drupal</li>
+                            <li>Other Frameworks: CreateJS/Phaser/React Native/Bootstrap</li>
+                            <li>Database Language: SQL / MySQL / SQLite/ Mongo DB</li>
                             <li>Graphic Design: Adobe Photoshop / Illustrator</li>
-                            <li>Integrated Development Environment: Eclipse / WebStorm / PHPStorm / Visual Studio Code</li>
-                            <li>Source Control: GIT</li>
+                            <li>Integrated Development Environment: Eclipse / WebStorm / PHPStorm / Visual Studio Code / Atom</li>
+                            <li>Source Control: Git/GitHub</li>
                             <li>Operating System: Linux / Windows</li>
                         </ul>
                     </div>
                     <div id="goals" class="tab-pane fade intro-divs">
                         <h3>Where am I now?</h3>
-                        <p>
-                        2nd year web development student having fundamental development skills with HTML,CSS, JavaScript, PHP or Java and having some knowledge in SQL, Linux, web design, JS/php frameworks, restful APIs and MongoDB etc.
-                        </p>
+                        <p>An IT graduate who has a good understanding of different web technologies and development
+                            tools with hands-on experience in building web applications/APIs and familiar with popular
+                            server-side and client-side programming languages as well as web development frameworks.</p>
                         <h3>Where am I going?</h3>
                         <p>
-                        Full stack developer with the ability to design the overall architecture of web applications implementation
+                            Full stack developer with the ability to design the overall architecture of web applications implementation
                         </p>
                         <h3>How do I get there?</h3>
                         <p>
-                            <ul class="goallist">
-                                <li>Continue to strengthen existing programming skills from the courses I am taking at NSCC.</li>
-                                <li>Connect with people working as full-stack web developers to get advice and learn from their experience</li>
-                                <li>Take online courses in learning websites like Lynda, Udemy to learn other skills required for the career goal</li>
-                                <li>Take time to reflect and improve the codes in previous assignments/project</li>
-                            </ul>
+                        <ul class="goallist">
+                            <li>Continue to strengthen existing technical skills gained from IT program at NSCC.</li>
+                            <li>Connect with people working as full-stack web developers to get their advices and learn from their experience.</li>
+                            <li>Study online tutorials in learning websites like Lynda, Udemy to obtain new skills required for the career goal</li>
+                            <li>Get more hands-on experience from employment after graduation</li>
+                        </ul>
                         </p>
-
                     </div>
                 </div>
             </div>
@@ -114,7 +135,7 @@
         <p class="header-two">Look no more, I am ready to use my expertise and knowledge to add value to your business and grow with it.</p>
         <div class="contact-button-section">
             <a href="#contact" class="btn button-one" role="button">GET IN TOUCH</a>
-            <a href="Resume_Hanna.pdf" class="btn button-two" role="button">VIEW MY RESUME</a>
+            <a href="Resume_HannaChen .pdf" class="btn button-two" role="button">VIEW MY RESUME</a>
         </div>
         <div class="resume-button-section">
 
@@ -133,9 +154,9 @@
                 </a>
             </div>
             <div class="sample-detail col-sm-4">
-                <h3 class="sampleheader">Web Design</h3>
-                <a href="portfolio.html#webdesign">
-                    <img src="sample2.png"  alt="Sample two" class="worksample-image"/>
+                <h3 class="sampleheader">NSCC IT Course PWA</h3>
+                <a href="portfolio.html#nscccourse">
+                    <img src="sample5.png"  alt="Sample two" class="worksample-image"/>
                 </a>
             </div>
             <div class="sample-detail col-sm-4">
@@ -157,22 +178,22 @@
                 <div class="form-group">
                     <label class="control-label col-sm-2 main-contact-label" for="name">Your Name</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" name="from_name" placeholder="Your name" name="name" required>
+                        <input type="text" class="form-control user-input" name="from_name" placeholder="Your name" name="name" required>
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="control-label col-sm-2 main-contact-label" for="email">Your Email</label>
                     <div class="col-sm-10">
-                        <input type="email" class="form-control" name="user_email" placeholder="e.g.name@example.com" name="email">
+                        <input type="email" class="form-control user-input" name="user_email" placeholder="e.g.name@example.com" name="email">
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="control-label col-sm-2 main-contact-label">Message</label>
                     <div class="col-sm-10">
-                        <textarea class="form-control" rows="5" name="message_html" placeholder="Enter some texts here"></textarea>
+                        <textarea class="form-control user-input" rows="5" name="message_html" placeholder="Enter some texts here"></textarea>
                     </div>
                 </div>
-                <label id="sendEmailMessage" class="sendMessage">Your message has been sent successfully!</label>
+                <label id="sendEmailMessage" class="sendMessage">Your message is sent!</label>
             </fieldset>
             <div class="send-form-button">
                 <input type="submit" class="sendform" value="Send">
@@ -183,9 +204,9 @@
         <div class="footer-area">
             <label>hannachen027@gmail.com</label>
             <span class="icons">
-                 <a href="#"><img src="facebook.png" alt="fb" id="fb" class="mediumimage"/></a>
-                 <a href="#"><img src="linkedin.png" alt="linkedin" id="linkedin" class="mediumimage"/></a>
-                 <a href="#"><img src="ins.png" alt="instagram" id="ins" class="mediumimage"/></a>
+                 <a href="https://www.facebook.com/heng.chen27"><img src="facebook.png" alt="fb" id="fb" class="mediumimage"/></a>
+                 <a href="https://www.linkedin.com/in/hanna-c-a43b988a/"><img src="linkedin.png" alt="linkedin" id="linkedin" class="mediumimage"/></a>
+                 <a href="https://www.instagram.com/hengchen27/"><img src="ins.png" alt="instagram" id="ins" class="mediumimage"/></a>
             </span>
         </div>
     </footer>
